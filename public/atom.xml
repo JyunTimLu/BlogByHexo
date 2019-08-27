@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>TimLu&#39;s Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="jyuntimlu.github.io/"/>
+  <updated>2017-04-02T12:31:10.993Z</updated>
+  <id>jyuntimlu.github.io/</id>
+  
+  <author>
+    <name>TimLu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>好用的 Android Studio Plugins</title>
+    <link href="jyuntimlu.github.io/2017/04/02/Android-Studio-Plugins/"/>
+    <id>jyuntimlu.github.io/2017/04/02/Android-Studio-Plugins/</id>
+    <published>2017-04-02T11:51:52.000Z</published>
+    <updated>2017-04-02T12:31:10.993Z</updated>
+    
+    <content type="html">&lt;p&gt;好用的 Android Studio Plugins&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;來紀錄一下目前有經常在使用的Android Studio Plugin&lt;/p&gt;
+&lt;h3 id=&quot;Android-ButterKnife-Zelezny&quot;&gt;&lt;a href=&quot;#Android-ButterKnife-Zelezny&quot; class=&quot;headerlink&quot; title=&quot;Android ButterKnife Zelezny&quot;&gt;&lt;/a&gt;Android ButterKnife Zelezny&lt;/h3&gt;&lt;p&gt;搭配ButterKnife使用,在xml檔Layout完後幫你Generator到你的java檔&lt;/p&gt;
+&lt;h3 id=&quot;Android-Studio-Prettify&quot;&gt;&lt;a href=&quot;#Android-Studio-Prettify&quot; class=&quot;headerlink&quot; title=&quot;Android Studio Prettify&quot;&gt;&lt;/a&gt;Android Studio Prettify&lt;/h3&gt;&lt;p&gt;把在Java檔的文字轉換至strings.xml&lt;/p&gt;
+&lt;h3 id=&quot;CheckStyle-IDEA&quot;&gt;&lt;a href=&quot;#CheckStyle-IDEA&quot; class=&quot;headerlink&quot; title=&quot;CheckStyle-IDEA&quot;&gt;&lt;/a&gt;CheckStyle-IDEA&lt;/h3&gt;&lt;p&gt;檢查你寫的Code是否有照既定的規範&lt;/p&gt;
+&lt;h3 id=&quot;Genymotion&quot;&gt;&lt;a href=&quot;#Genymotion&quot; class=&quot;headerlink&quot; title=&quot;Genymotion&quot;&gt;&lt;/a&gt;Genymotion&lt;/h3&gt;&lt;p&gt;Genymotion 是一款好用的Android模擬器,裝上這個Plugin後可以直接整合到IDE裡&lt;/p&gt;
+&lt;h3 id=&quot;GsonFormat&quot;&gt;&lt;a href=&quot;#GsonFormat&quot; class=&quot;headerlink&quot; title=&quot;GsonFormat&quot;&gt;&lt;/a&gt;GsonFormat&lt;/h3&gt;&lt;p&gt;超級歡樂的Plugin,能把Json格式直接轉成JavaBean&lt;/p&gt;
+&lt;h3 id=&quot;CodeGlance&quot;&gt;&lt;a href=&quot;#CodeGlance&quot; class=&quot;headerlink&quot; title=&quot;CodeGlance&quot;&gt;&lt;/a&gt;CodeGlance&lt;/h3&gt;&lt;p&gt;讓你的IDE右邊多了一個像Sublime右方的小視窗,讓你可以快速定位程式碼,不用一直滾你的滑鼠滾輪&lt;/p&gt;
+&lt;h3 id=&quot;FreeLine&quot;&gt;&lt;a href=&quot;#FreeLine&quot; class=&quot;headerlink&quot; title=&quot;FreeLine&quot;&gt;&lt;/a&gt;FreeLine&lt;/h3&gt;&lt;p&gt;阿里巴巴出品,比InstanRun Build還快,讓生命不用浪費在等GradleBuild,歡樂&lt;br&gt;但是目前只能預設用Debug的BuildType&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;好用的 Android Studio Plugins&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Android" scheme="jyuntimlu.github.io/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android 依賴Github Project</title>
+    <link href="jyuntimlu.github.io/2016/09/26/Android-Dependcies-Github/"/>
+    <id>jyuntimlu.github.io/2016/09/26/Android-Dependcies-Github/</id>
+    <published>2016-09-26T01:21:52.000Z</published>
+    <updated>2016-09-26T03:24:00.089Z</updated>
+    
+    <content type="html">&lt;p&gt;Dependencies Project From Github&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;在Project的build.gradle下加入&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;allprojects &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    repositories &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        jcenter()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        maven &amp;#123; url &lt;span class=&quot;string&quot;&gt;&quot;https://jitpack.io&quot;&lt;/span&gt; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在Application build.gradle 加入需要引入的Github Project&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dependencies &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    compile &lt;span class=&quot;string&quot;&gt;&#39;com.github.User:Repo:Tag&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;開發過程中還沒有Release Tag 可以用commit sha 替代&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Dependencies Project From Github&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Android" scheme="jyuntimlu.github.io/tags/Android/"/>
+    
+      <category term="Github" scheme="jyuntimlu.github.io/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android ACRA-自動發送CrashReport</title>
+    <link href="jyuntimlu.github.io/2016/06/02/Android-ACRA/"/>
+    <id>jyuntimlu.github.io/2016/06/02/Android-ACRA/</id>
+    <published>2016-06-02T08:11:52.000Z</published>
+    <updated>2017-03-10T14:07:24.386Z</updated>
+    
+    <content type="html">&lt;p&gt;Automated Android Crash Reports with ACRA and Cloudant&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.toptal.com/android/automated-android-crash-reports-with-acra-and-cloudant&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;參考&lt;/a&gt;&lt;br&gt;Android APP Crash 自動傳錯誤訊息上Cloudant&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在Cloudant建立APP錯誤訊息Storage資料庫&lt;br&gt;&lt;img src=&quot;/images/android-acra/Image1.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;在Cloudant建立APP錯誤訊息acralyzer資料庫&lt;br&gt;&lt;img src=&quot;/images/android-acra/Image2.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;取得Ganeral API Keys 將Write權限開啟 紀錄下key與password&lt;br&gt;&lt;img src=&quot;/images/android-acra/Image3.png&quot; alt=&quot;&quot;&gt;&lt;br&gt; 輸入該網址可以觀看Database Dashboard&lt;br&gt; &lt;a href=&quot;https://{username}.cloudant.com/{acralyzerdatabase}/_design/acralyzer/index.html#/dashboard&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://{username}.cloudant.com/{acralyzerdatabase}/_design/acralyzer/index.html#/dashboard&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/android-acra/Image4.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;Implementing ACRA in your Android project&lt;br&gt; 將acra-4.5.0.jar 匯入libs&lt;br&gt; 在AndroidManifest.xml 加入&lt;br&gt; &lt;img src=&quot;/images/android-acra/Image5.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;ACRA class setup&lt;br&gt;username 處輸入cloudant 帳號,app storage database name 輸入第一步建立的Storage資料庫,key&amp;amp;password輸入第三步取得的key,password&lt;br&gt;&lt;img src=&quot;/images/android-acra/Image6.png&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;DONE~&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;2017.3.10 呃…更新一下XD 在用過Fabric的Crashlytics後覺得Fabric的功能比ACRA強大太多啦~有AndroidStudio的Plugin, 也不用在Cloudant額外建一個DataBase&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Automated Android Crash Reports with ACRA and Cloudant&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Android" scheme="jyuntimlu.github.io/tags/Android/"/>
+    
+      <category term="ACRA" scheme="jyuntimlu.github.io/tags/ACRA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>紀錄一下Hexo Markdown Support</title>
+    <link href="jyuntimlu.github.io/2016/06/02/MarkDown/"/>
+    <id>jyuntimlu.github.io/2016/06/02/MarkDown/</id>
+    <published>2016-06-02T05:46:01.000Z</published>
+    <updated>2016-06-02T17:24:26.300Z</updated>
+    
+    <content type="html">&lt;p&gt;Markdown Support&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/othree/markdown-syntax-zhtw/blob/master/syntax.md&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdown 文件&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# This is H1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;This-is-H1&quot;&gt;&lt;a href=&quot;#This-is-H1&quot; class=&quot;headerlink&quot; title=&quot;This is H1&quot;&gt;&lt;/a&gt;This is H1&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;## This is H2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;This-is-H2&quot;&gt;&lt;a href=&quot;#This-is-H2&quot; class=&quot;headerlink&quot; title=&quot;This is H2&quot;&gt;&lt;/a&gt;This is H2&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;### This is H3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;This-is-H3&quot;&gt;&lt;a href=&quot;#This-is-H3&quot; class=&quot;headerlink&quot; title=&quot;This is H3&quot;&gt;&lt;/a&gt;This is H3&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#### This is H4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;This-is-H4&quot;&gt;&lt;a href=&quot;#This-is-H4&quot; class=&quot;headerlink&quot; title=&quot;This is H4&quot;&gt;&lt;/a&gt;This is H4&lt;/h4&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;##### This is H5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&quot;This-is-H5&quot;&gt;&lt;a href=&quot;#This-is-H5&quot; class=&quot;headerlink&quot; title=&quot;This is H5&quot;&gt;&lt;/a&gt;This is H5&lt;/h5&gt;&lt;p&gt;Links&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[GitHub](https://github.com/)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Images&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;![](/images/filename.jpg)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/github.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Syntax Highlighting&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;Public String &lt;span class=&quot;title&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	String s = &lt;span class=&quot;string&quot;&gt;&quot;HelloWorld&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; s &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Markdown Support&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="MarkDown" scheme="jyuntimlu.github.io/tags/MarkDown/"/>
+    
+  </entry>
+  
+</feed>

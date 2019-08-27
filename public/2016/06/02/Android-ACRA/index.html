@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Android ACRA-自動發送CrashReport | TimLu&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Automated Android Crash Reports with ACRA and Cloudant">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android ACRA-自動發送CrashReport">
+<meta property="og:url" content="jyuntimlu.github.io/2016/06/02/Android-ACRA/index.html">
+<meta property="og:site_name" content="TimLu's Blog">
+<meta property="og:description" content="Automated Android Crash Reports with ACRA and Cloudant">
+<meta property="og:image" content="jyuntimlu.github.io/images/android-acra/Image1.png">
+<meta property="og:image" content="jyuntimlu.github.io/images/android-acra/Image2.png">
+<meta property="og:image" content="jyuntimlu.github.io/images/android-acra/Image3.png">
+<meta property="og:image" content="jyuntimlu.github.io/images/android-acra/Image4.png">
+<meta property="og:image" content="jyuntimlu.github.io/images/android-acra/Image5.png">
+<meta property="og:image" content="jyuntimlu.github.io/images/android-acra/Image6.png">
+<meta property="og:updated_time" content="2017-03-10T14:07:24.386Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android ACRA-自動發送CrashReport">
+<meta name="twitter:description" content="Automated Android Crash Reports with ACRA and Cloudant">
+<meta name="twitter:image" content="jyuntimlu.github.io/images/android-acra/Image1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="TimLu&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">TimLu&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="jyuntimlu.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Android-ACRA" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/02/Android-ACRA/" class="article-date">
+  <time datetime="2016-06-02T08:11:52.000Z" itemprop="datePublished">2016-06-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Android ACRA-自動發送CrashReport
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Automated Android Crash Reports with ACRA and Cloudant</p>
+<a id="more"></a>
+<p><a href="http://www.toptal.com/android/automated-android-crash-reports-with-acra-and-cloudant" target="_blank" rel="external">參考</a><br>Android APP Crash 自動傳錯誤訊息上Cloudant</p>
+<ol>
+<li>在Cloudant建立APP錯誤訊息Storage資料庫<br><img src="/images/android-acra/Image1.png" alt=""></li>
+<li>在Cloudant建立APP錯誤訊息acralyzer資料庫<br><img src="/images/android-acra/Image2.png" alt=""></li>
+<li>取得Ganeral API Keys 將Write權限開啟 紀錄下key與password<br><img src="/images/android-acra/Image3.png" alt=""><br> 輸入該網址可以觀看Database Dashboard<br> <a href="https://{username}.cloudant.com/{acralyzerdatabase}/_design/acralyzer/index.html#/dashboard" target="_blank" rel="external">https://{username}.cloudant.com/{acralyzerdatabase}/_design/acralyzer/index.html#/dashboard</a><br><img src="/images/android-acra/Image4.png" alt=""></li>
+<li>Implementing ACRA in your Android project<br> 將acra-4.5.0.jar 匯入libs<br> 在AndroidManifest.xml 加入<br> <img src="/images/android-acra/Image5.png" alt=""></li>
+<li>ACRA class setup<br>username 處輸入cloudant 帳號,app storage database name 輸入第一步建立的Storage資料庫,key&amp;password輸入第三步取得的key,password<br><img src="/images/android-acra/Image6.png" alt=""></li>
+<li><p>DONE~</p>
+</li>
+<li><p>2017.3.10 呃…更新一下XD 在用過Fabric的Crashlytics後覺得Fabric的功能比ACRA強大太多啦~有AndroidStudio的Plugin, 也不用在Cloudant額外建一個DataBase</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="jyuntimlu.github.io/2016/06/02/Android-ACRA/" data-id="cj10o3j3l0000ysewey4b6pot" class="article-share-link">Share</a>
+      
+        <a href="jyuntimlu.github.io/2016/06/02/Android-ACRA/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ACRA/">ACRA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/09/26/Android-Dependcies-Github/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Android 依賴Github Project
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/02/MarkDown/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">紀錄一下Hexo Markdown Support</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ACRA/">ACRA</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Github/">Github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MarkDown/">MarkDown</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ACRA/" style="font-size: 10px;">ACRA</a> <a href="/tags/Android/" style="font-size: 20px;">Android</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/MarkDown/" style="font-size: 10px;">MarkDown</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/04/02/Android-Studio-Plugins/">好用的 Android Studio Plugins</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/26/Android-Dependcies-Github/">Android 依賴Github Project</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/02/Android-ACRA/">Android ACRA-自動發送CrashReport</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/02/MarkDown/">紀錄一下Hexo Markdown Support</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 TimLu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+    <script type="text/javascript">
+    var disqus_shortname = 'timlu1006';
+
+    (function(){
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+    </script>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
